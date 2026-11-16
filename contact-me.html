@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Portofolio Mahasiswa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="profile.html" class="logo">Portofolio<span>.</span></a>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="about-me.html">About Me</a></li>
+                    <li><a href="educations.html">Educations</a></li>
+                    <li><a href="my-projects.html">My Project</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="contact-me.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section page-top bg-dark">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-tag">Mari Terhubung</span>
+                    <h2>Contact Me</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="contact-wrapper fade-in">
+                    <div class="contact-info">
+                        <h3>Jangan ragu untuk menyapa</h3>
+                        <p>Terbuka untuk diskusi seputar perkuliahan, kolaborasi proyek pemrograman, maupun tugas kelompok.</p>
+                        <ul class="contact-details">
+                            <li><strong>Email:</strong> trysalasma1510@email.com</li>
+                            <li><strong>Lokasi:</strong> Subang, Jawa Barat, Indonesia</li>
+                            <li><strong>Instagram</strong> @trylsma</li>
+                        </ul>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="nama" placeholder="Nama Lengkap" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Alamat Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="pesan" rows="4" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">Kirim Pesan</button>
+                        <p id="form-status" class="form-status"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 T. Dibuat untuk Tugas UTS Pemrograman Web.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('open');
+        });
+
+        const contactForm = document.getElementById('contactForm');
+        const formStatus = document.getElementById('form-status');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const nama = document.getElementById('nama').value;
+            formStatus.textContent = `Terima kasih, ${nama}! Pesan Anda telah berhasil terkirim.`;
+            contactForm.reset();
+            setTimeout(() => { formStatus.textContent = ''; }, 5000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Portofolio Trysa Lasma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="profile.html" class="logo">Portofolio<span>.</span></a>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="about-me.html">About Me</a></li>
+                    <li><a href="educations.html">Educations</a></li>
+                    <li><a href="my-projects.html" class="active">My Project</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="contact-me.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section page-top bg-light">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-tag">Karya & Tugas</span>
+                    <h2>My Project</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="project-grid fade-in">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-badge">Web Programming</div>
+                        <h3>Kalkulator Web Sederhana</h3>
+                        <p>Aplikasi kalkulator interaktif berbasis web yang dirancang untuk melakukan operasi aritmatika dasar sebagai bagian dari penugasan mata kuliah Pemrograman Web.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-badge">Web Development</div>
+                        <h3>Website Portofolio & Latihan Web</h3>
+                        <p>Kumpulan halaman web latihan mandiri dan portofolio profesional yang mencakup profil, jadwal kuliah, form, serta tabel data terstruktur.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>GitHub Pages</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Trysa Lasmaoktori. Dibuat untuk Tugas Pemrograman Web.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
