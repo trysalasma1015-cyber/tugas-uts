@@ -13,7 +13,6 @@
     --transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* Perbaikan dari '-' menjadi '*' agar reset CSS berfungsi normal */
 * {
     margin: 0;
     padding: 0;
@@ -50,7 +49,6 @@ h1, h2, h3, .logo {
     padding: 0 24px;
 }
 
-/* Navbar */
 .navbar {
     position: fixed;
     top: 0;
@@ -124,7 +122,6 @@ h1, h2, h3, .logo {
     font-weight: 600;
 }
 
-/* Hero / Profile Section */
 .hero-section {
     min-height: 100vh;
     display: flex;
@@ -222,7 +219,6 @@ h1, h2, h3, .logo {
     transform: translateY(-2px);
 }
 
-/* Bingkai Foto Melayang */
 .image-frame {
     position: relative;
     width: 300px;
@@ -310,7 +306,6 @@ h1, h2, h3, .logo {
     border-radius: 2px;
 }
 
-/* About Me (Diperbarui agar lebih berisi, berbingkai elegan & rapi) */
 .about-content {
     max-width: 820px;
     margin: 0 auto;
@@ -366,7 +361,6 @@ h1, h2, h3, .logo {
     transform: translateY(-2px);
 }
 
-/* Educations (Timeline) */
 .timeline {
     max-width: 750px;
     margin: 0 auto;
@@ -423,7 +417,6 @@ h1, h2, h3, .logo {
     font-size: 0.95rem;
 }
 
-/* My Project */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -485,7 +478,6 @@ h1, h2, h3, .logo {
     font-weight: 600;
 }
 
-/* Experience */
 .experience-list {
     max-width: 800px;
     margin: 0 auto;
@@ -544,7 +536,6 @@ h1, h2, h3, .logo {
     font-size: 0.95rem;
 }
 
-/* Contact */
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -630,7 +621,6 @@ h1, h2, h3, .logo {
     margin-top: 4px;
 }
 
-/* Footer */
 footer {
     background-color: #011c16;
     color: #a7f3d0;
@@ -639,7 +629,6 @@ footer {
     font-size: 0.88rem;
 }
 
-/* Animations */
 .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -660,7 +649,6 @@ footer {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Mobile Menu */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -685,7 +673,6 @@ footer {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Responsive */
 @media (max-width: 850px) {
     .hero-grid,
     .contact-wrapper {
